@@ -1,0 +1,21 @@
+
+.image{
+
+    background: url("xyz") no-repeat;
+    
+}
+a:active{
+    color:blueviolet;
+}
+a:hover{
+    color:green;
+}
+a:visited{
+    color:brown;
+}
+
+/*td,th{
+            border:1px solid blue;
+            text-align: right;
+            padding:5px;
+        }*/

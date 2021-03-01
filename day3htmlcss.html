@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="day3css.css"/>
+        <!--border,style,radius,color,right,left,bottom,top,[padding,margin-top,right,bot,left]-->
+        <style>/*Internal*/
+        
+/*table, td, th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  th {
+    height: 70px;
+  }*/
+        td,th{
+            border:1px solid blue;
+            text-align: right;
+            padding:5px;
+        }
+        form{
+            border-style: dotted;
+            border-radius: 1px;
+            border-color: red;
+            padding:5px;
+            margin:5px;
+        }
+        p{
+            text-align: right;
+        }
+        input[type="submit"]{
+            background-color: green;
+        }
+
+        </style>
+        <title>Day 3 HTML CSS</title>
+    </head>
+    <body class="image">
+        <form action="/index.html">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname"  placeholder="Your name.."/>
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname"  placeholder="Your last name.."/>
+          
+            <input type="submit" value="Submit"/>
+            <input type="button" value="Okay"/>
+          </form>
+          <table style="border:1px solid"><!--inline-->
+              <caption>Student details</caption>
+              <tr><th>Name</th>
+            <th>ID</th></tr>
+            <tr><td>Fareena</td>
+            <td>123</td></tr>
+          </table>
+          <p>hiii</p>
+          <!--types:checkbox,password attri:readonly,disabled
+        
+        
+        -->
+          <p id="para">this is id selector</p>
+          <p class="paragraph">this is class selector</p>
+          <div class="beverage">
+              <ol>
+                  <li>
+                      tea
+                  </li>
+                  <li>coffee</li>
+                </ol>
+              <a href="day3css.css" >css</a>
+          </div>
+          
+    </body>
+    
+</html>

@@ -10,12 +10,58 @@
         </title>
     </head>
     <body>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          th, td {
+            text-align: left;
+            padding: 8px;
+          }
+          
+          tr:nth-child(even) {background-color: #f2f2f2;}
+          </style>
+          </head>
+          <body>
+          
+          <h2>Striped Table</h2>
+          <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+          
+          <table>
+            <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            </tr>
+            <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+            </tr>
+            <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+            </tr>
+            <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+            </tr>
+            <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+            </tr>
+          </table>
         <h1>
             Hello!!!
         </h1>
         <!--P is a block level element
         an element that occupies a new line
         new space
+        https://us02web.zoom.us/webinar/register/WN_BBP0-f1KQIyx6aO78bWScQ
         -->
         <div><p> This is AICL Batch 6 FE training... comprising of HTML, CSS, Javasript, PHP
             At the end of the course, Each student are supposed to create their own profile and share it to the team and get it reviewed.
