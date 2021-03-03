@@ -2,24 +2,33 @@
 <html>
 <body>
 
-  <h2>JavaScript in Head</h2>
-
-  <p id="demo">A Paragraph.</p>
-  
-  <button type="button" onclick="myFunction()">Try it</button>
-  <script>
-    function myFunction(){
-      console.log("hiiii");
+  <div class="example">
+    A div with class="example"
+    </div>
+    
+    <div class="example">
+    Another div with class="example"
+    </div>
+    
+    <p class="example">This is a p element with class="example".</p>
+    
+    <p>This is a <span class="example">span</span> element with class="example" inside another p element.</p>
+    
+    <p>Click the button to change the background color of all elements with class="example".</p>
+    
+    <button class="example" onclick="myFunction()">Try it</button>
+    
+    <p><strong>Note:</strong> The getElementsByClassName() method is not supported in Internet Explorer 8 and earlier versions.</p>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("example");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        //alert(x.length);
+        x[i].style.backgroundColor = "red";
+      }
     }
-      //document.write(6+7);
-      //window.alert(7+8);
-      //alert("hello");
-      //console.log("hiiii")
-  </script>
-  <h2>JavaScript Statements</h2>
-  
-  <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
-  
-  <p id="demo"></p>
+    </script>
 </body>
 </html>
